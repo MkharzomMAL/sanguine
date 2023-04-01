@@ -1,0 +1,64 @@
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.navbar-nav .nav-link.nav-link-custom {
+    font-size: large;
+    color: white;
+}
+
+.navbar-nav .nav-link.nav-link-custom:active,
+.navbar-nav .nav-link.nav-link-custom.active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.nav-link-custom:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+.navbar-nav .nav-link.nav-link-mobile {
+    font-size:xx-large;
+    color: white;
+}
+.navbar-nav .nav-link.nav-link-mobile:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.nav-link-mobile:active,
+.navbar-nav .nav-link.nav-link-mobile.active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#navbarToggleExternalContent {
+    position: fixed;
+    padding-top: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(134, 114, 114, 0.411); /* add a semi-transparent background */
+    overflow: auto;
+  }
+  
