@@ -15,6 +15,11 @@ class CreateHomepageContentsTable extends Migration
     {
         Schema::create('homepage_contents', function (Blueprint $table) {
             $table->id();
+            $table->string('video')->nullable();
+            $table->string('image')->nullable();
+            $table->string('heading1')->nullable();
+            $table->string('heading2')->nullable();
+            $table->string('brief')->nullable();
             $table->timestamps();
         });
     }

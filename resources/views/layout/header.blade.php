@@ -69,16 +69,6 @@
                 </div>
                 
             </nav>
-            
-            <div class="container h-50 justify-content-center d-flex align-items-center text-center">
-                <h1>TEST</h1>
-            </div>
-
-            <div class="video-background">
-                <video autoplay loop muted>
-                    <source src="{{ asset('assets/videos/Home.mov') }}" type="video/mp4">
-                </video>
-            </div>
 
 
             

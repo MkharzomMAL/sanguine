@@ -15,6 +15,9 @@ class CreateServiceLogosTable extends Migration
     {
         Schema::create('service_logos', function (Blueprint $table) {
             $table->id();
+            $table->string('title')->nullable();
+            $table->string('logo')->nullable();
+            $table->string('link')->nullable();
             $table->timestamps();
         });
     }

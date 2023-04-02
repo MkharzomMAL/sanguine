@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\WorkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +23,11 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('/', [HomepageController::class, 'index'])->name('homepage');
+Route::get('/about', [HomepageController::class, 'about'])->name('about');
+Route::get('/services', [HomepageController::class, 'services'])->name('services');
+
+Route::get('/team', [MemberController::class, 'index'])->name('team.index');
+Route::get('/team/{slug}', [MemberController::class, 'index'])->name('homepage');
+
+Route::get('/work', [WorkController::class, 'index'])->name('work.index');
+Route::get('/work/{slug}', [WorkController::class, 'show'])->name('work.show');
