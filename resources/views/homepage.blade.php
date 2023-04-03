@@ -8,11 +8,16 @@
         <p class="text-white p-4">{{ $homepage->brief }}</p>
     </div>
 
-    <div class="video-background">
-        <video autoplay loop muted>
-            <source src="{{ $videoUrl }}" type="video/mp4">
-        </video>
-    </div>
-
+    @if($homepage->video != '[]')
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="{{ $videoUrl }}" type="video/mp4">
+            </video>
+        </div>
+    @else
+        <div class="video-background">
+            <img src="{{ Voyager::image($homepage->image) }}" alt="Page Image">
+        </div>
+    @endif
 
 @endsection
