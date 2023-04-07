@@ -27,8 +27,10 @@
 <script type="text/javascript" src="https://cdn.amcharts.com/lib/3/ammap.js"></script>
 <script type="text/javascript" src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}"></script>
+<script src="{{ asset('assets/js/highlight.js') }}"></script>
 
 
 
